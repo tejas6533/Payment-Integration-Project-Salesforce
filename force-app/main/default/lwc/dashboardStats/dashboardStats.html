@@ -1,0 +1,43 @@
+<template>
+
+    <lightning-card title="Transaction Statistics">
+
+        <div class="slds-grid slds-wrap slds-p-around_medium">
+
+            <div class="slds-col slds-size_1-of-4">
+                <lightning-card title="Total">
+                    <div class="slds-p-around_medium">
+                        <h1>{total}</h1>
+                    </div>
+                </lightning-card>
+            </div>
+
+            <div class="slds-col slds-size_1-of-4">
+                <lightning-card title="Pending">
+                    <div class="slds-p-around_medium">
+                        <h1>{pending}</h1>
+                    </div>
+                </lightning-card>
+            </div>
+
+            <div class="slds-col slds-size_1-of-4">
+                <lightning-card title="Approved">
+                    <div class="slds-p-around_medium">
+                        <h1>{approved}</h1>
+                    </div>
+                </lightning-card>
+            </div>
+
+            <div class="slds-col slds-size_1-of-4">
+                <lightning-card title="Paid">
+                    <div class="slds-p-around_medium">
+                        <h1>{paid}</h1>
+                    </div>
+                </lightning-card>
+            </div>
+
+        </div>
+
+    </lightning-card>
+
+</template>

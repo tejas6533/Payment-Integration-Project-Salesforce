@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Transaction Dashboard">
+
+        <lightning-datatable
+            key-field="Id"
+            data={transactions}
+            columns={columns}
+            onrowaction={handleRowAction}>
+        </lightning-datatable>
+
+    </lightning-card>
+</template>

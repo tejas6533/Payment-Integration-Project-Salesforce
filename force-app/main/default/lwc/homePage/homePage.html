@@ -1,0 +1,63 @@
+<template>
+
+    <lightning-card title="Secure Financial Transaction Approval System">
+
+        <div class="slds-p-around_large">
+
+            <lightning-layout multiple-rows>
+
+                <lightning-layout-item size="6" padding="around-small">
+                    <lightning-card title="Create Transaction">
+                        <div class="slds-p-around_medium">
+                            Create and submit a new transaction.
+                            <br/><br/>
+
+                            <lightning-button
+                                label="Open"
+                                variant="brand"
+                                onclick={openTransactionForm}>
+                            </lightning-button>
+
+                        </div>
+                    </lightning-card>
+                </lightning-layout-item>
+
+                <lightning-layout-item size="6" padding="around-small">
+                    <lightning-card title="Transaction Dashboard">
+                        <div class="slds-p-around_medium">
+                            View all transactions.
+                            <br/><br/>
+
+                            <lightning-button
+                                label="Open"
+                                variant="brand"
+                                onclick={openDashboard}>
+                            </lightning-button>
+
+                        </div>
+                    </lightning-card>
+                </lightning-layout-item>
+
+                <lightning-layout-item size="6" padding="around-small">
+                    <lightning-card title="Approval Panel">
+                        <div class="slds-p-around_medium">
+                            Approve or reject transactions.
+                            <br/><br/>
+
+                            <lightning-button
+                                label="Open"
+                                variant="brand"
+                                onclick={openApproval}>
+                            </lightning-button>
+
+                        </div>
+                    </lightning-card>
+                </lightning-layout-item>
+
+            </lightning-layout>
+
+        </div>
+
+    </lightning-card>
+
+</template>

@@ -1,0 +1,38 @@
+<template>
+
+    <lightning-card title="Approval Panel">
+
+        <template for:each={transactions} for:item="tr">
+
+            <div key={tr.Id}
+                 class="slds-box slds-m-around_small">
+
+                <p><b>Name:</b> {tr.Name}</p>
+                <p><b>Amount:</b> {tr.Amount__c}</p>
+                <p><b>Receiver:</b> {tr.Receive__c}</p>
+                <p><b>Risk:</b> {tr.Risk_Level__c}</p>
+
+                <br/>
+
+                <lightning-button
+                    label="Approve"
+                    variant="success"
+                    data-id={tr.Id}
+                    onclick={approve}>
+                </lightning-button>
+
+                <lightning-button
+                    label="Reject"
+                    variant="destructive"
+                    data-id={tr.Id}
+                    onclick={reject}
+                    class="slds-m-left_small">
+                </lightning-button>
+
+            </div>
+
+        </template>
+
+    </lightning-card>
+
+</template>
